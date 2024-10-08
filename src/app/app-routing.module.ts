@@ -7,7 +7,8 @@ const routes: Routes = [
     path: 'authenticated',
     loadChildren: () => import('./modules/authenticated/authenticated.module').then(m => m.AuthenticatedModule)
   },
-  { path: '', redirectTo: 'public/home', pathMatch: 'full' }
+  { path: '', redirectTo: 'public/home', pathMatch: 'full' },  // Redirige a home por defecto
+  { path: '**', redirectTo: 'public/home' }  // Cualquier ruta inválida redirige a home
 ];
 
 
