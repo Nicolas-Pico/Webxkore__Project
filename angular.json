@@ -48,8 +48,7 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all",
-              "baseHref": "/Webxkore__Project/"
+              "outputHashing": "all"
             },
             "development": {
               "buildOptimizer": false,
