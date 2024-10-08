@@ -1,0 +1,44 @@
+<app-header></app-header>
+<!-- register.component.html -->
+<div class="container d-flex justify-content-center align-items-center vh-100">
+  <div class="register-box p-4 border shadow">
+    <h2 class="text-center mb-4">Crear cuenta</h2>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" id="name" class="form-control" formControlName="name" placeholder="Ingresa tu nombre" />
+        <div *ngIf="registerForm.get('name')?.invalid && registerForm.get('name')?.touched" class="text-danger">
+          El nombre es requerido.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" id="email" class="form-control" formControlName="email" placeholder="Ingresa tu correo" />
+        <div *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched" class="text-danger">
+          Ingresa un correo válido.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" id="password" class="form-control" formControlName="password" placeholder="Ingresa tu contraseña" />
+        <div *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched" class="text-danger">
+          La contraseña es requerida.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="confirmPassword" class="form-label">Confirmar contraseña</label>
+        <input type="password" id="confirmPassword" class="form-control" formControlName="confirmPassword" placeholder="Confirma tu contraseña" />
+        <div *ngIf="registerForm.get('confirmPassword')?.invalid && registerForm.get('confirmPassword')?.touched" class="text-danger">
+          Debes confirmar la contraseña.
+        </div>
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary" [disabled]="registerForm.invalid">Registrar</button>
+      </div>
+      <div class="d-flex justify-content-between mt-3">
+        <span class="text-muted">¿Ya tienes cuenta?</span>
+        <a routerLink="/public/login" class="text-muted">Log in</a>
+      </div>
+    </form>
+  </div>
+</div>

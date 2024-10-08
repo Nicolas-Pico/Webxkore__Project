@@ -1,0 +1,53 @@
+/* login.component.css */
+.container {
+  height: 100vh;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+h2 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 5px;
+  height: 45px;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 5px;
+  height: 45px;
+}
+
+.btn-primary {
+  background-color: #8BC34A;
+  border-color: #8BC34A;
+}
+
+.btn-primary:hover {
+  background-color: #7CB342;
+  border-color: #7CB342;
+}
+
+
+a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.login-box {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}

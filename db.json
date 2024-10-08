@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "0dec",
+      "name": "Pablito",
+      "email": "Pablo@gmail.com",
+      "password": "7850418",
+      "role": "Usuario"
+    },
+    {
+      "id": "77a3",
+      "name": "Carlos",
+      "email": "carlitos1@gmail.com",
+      "password": "123456",
+      "role": "Usuario"
+    },
+    {
+      "id": "1da0",
+      "name": "Fernanda",
+      "email": "Fer12@gmail.com",
+      "password": "123456",
+      "role": "usuario"
+    },
+    {
+      "id": "ee74",
+      "name": "Luis",
+      "email": "luis@gmail.com",
+      "password": "123456",
+      "role": "usuario"
+    }
+  ]
+}

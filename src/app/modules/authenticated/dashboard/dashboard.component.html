@@ -1,0 +1,112 @@
+<!-- Header -->
+<nav class="navbar navbar-light bg-white mb-4 px-4">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <!-- Logo y Título -->
+    <div class="d-flex align-items-center">
+      <i class="bi bi-gear-fill me-2"></i>
+      <h4 class="mb-0">WebXkore Admin</h4>
+    </div>
+
+    <!-- Barra de búsqueda e íconos -->
+    <div class="d-flex align-items-center">
+      <form class="d-flex me-3">
+        <input class="form-control search-input" type="search" placeholder="Search..." aria-label="Search">
+      </form>
+      <i class="bi bi-bell me-3"></i>
+      <i class="bi bi-person-circle"></i>
+    </div>
+  </div>
+</nav>
+
+<!-- Contenedor principal -->
+<div class="container-fluid d-flex">
+  <!-- Sidebar -->
+  <div class="sidebar col-md-2 p-3">
+    <ul class="nav flex-column">
+      <li class="nav-item mb-3">
+        <a class="nav-link sidebar-link active" href="#">Dashboard</a>
+      </li>
+      <li class="nav-item mb-3">
+        <a class="nav-link sidebar-link" href="#">Usuarios</a>
+      </li>
+      <li class="nav-item mb-3">
+        <a class="nav-link sidebar-link" href="#">Roles</a>
+      </li>
+      <li class="nav-item mb-3">
+        <a class="nav-link sidebar-link" href="#">Servicios</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="col-md-10 p-4" style="overflow-y: auto;">
+    <!-- Tarjetas -->
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5>Uso de la plataforma</h5>
+          <div class="graph-placeholder">
+            <img src="assets/images/Grafica1.png" alt="Uso de la plataforma" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5>Actividad del usuario</h5>
+          <div class="graph-placeholder">
+            <img src="assets/images/Grafica2.png" alt="Actividad del usuario" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Acciones rápidas -->
+    <div class="mb-4">
+      <h5>Acciones rápidas</h5>
+      <div class="btn-group">
+        <button class="btn quick-action-btn me-2">Agregar Usuario</button>
+        <button class="btn quick-action-btn me-2">Agregar Rol</button>
+        <button class="btn quick-action-btn">Agregar Servicio</button>
+      </div>
+    </div>
+
+    <!-- Gestión de usuarios -->
+    <!-- Gestión de usuarios -->
+    <div class="card p-3">
+      <h5>Gestión de Usuarios</h5>
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <span>Filtrar por Rol</span>
+        <select class="form-select" style="width: 200px;">
+          <option value="Todos">Todos</option>
+          <option value="Administrador">Administrador</option>
+          <option value="Viewer">Viewer</option>
+        </select>
+      </div>
+
+      <!-- Tabla de Usuarios -->
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Correo Electrónico</th>
+          <th>Roles</th>
+          <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Recorre el array de usuarios con *ngFor -->
+        <tr *ngFor="let user of users">
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.role }}</td>
+          <td>
+            <button class="btn btn-edit me-2">Editar</button>
+            <button class="btn btn-delete">Eliminar</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>

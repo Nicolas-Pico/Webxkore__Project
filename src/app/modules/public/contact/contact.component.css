@@ -1,0 +1,78 @@
+/* Ajusta el tamaño máximo del contenedor principal */
+.container {
+  max-width: 900px;
+}
+
+/* Estilo para las tarjetas */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+/* Ajuste de margenes y centrado de los títulos */
+h4, h5 {
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Estilo para la sección de "Información de la Empresa" */
+#company-info {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+/* Personalización del texto */
+#company-info p {
+  margin-bottom: 8px;
+}
+
+#company-info a {
+  color: #000;
+  text-decoration: none;
+}
+
+#company-info a:hover {
+  text-decoration: underline;
+}
+
+/* Botón de enviar personalizado */
+.btn-success {
+  background-color: #a3c663;
+  border: none;
+  font-weight: 500;
+}
+
+/* Hover para el botón */
+.btn-success:hover {
+  background-color: #8fb254;
+}
+
+/* Estilo del pie de página */
+footer {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+/* Centrado del contenido y márgenes */
+.row {
+  justify-content: center;
+}
+
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+/* Ajuste para enlaces en el pie de página */
+footer a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
